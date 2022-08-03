@@ -1,0 +1,72 @@
+body{
+   margin: 0px;
+   padding: 0px;
+   background: #eeeeee;
+}
+
+div#app_wrapper{
+    background: white;
+    width: 80%;
+    margin-left: 10%;
+    height: 100vh;
+    overflow: auto;
+}
+
+header#app_header{
+    text-align: center;
+    z-index: 10;
+    position: fixed;
+    width: 80%;
+    background: black;
+    color: white;
+    padding: 10px 0px;
+    font-weight: bold;
+}
+
+div#account_input_wrapper {
+    background: white;
+    z-index: 5;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    text-align: center;
+    position: fixed;
+    width: 80%;
+}
+
+div#account_input_wrapper > input{
+    border:none;
+    border-bottom: 2px solid silver;
+    outline: none;
+}
+div#account_input_wrapper > input.valid{
+    border-bottom: 2px solid lightgreen;
+}
+
+
+div#account_list {
+  padding: 100px 20px 0px 20px;
+}
+
+div#account_list div.account_box{
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 5px gray;
+    border-radius: 10px;
+    padding: 10px;
+}
+div.account_box > div {
+    margin-bottom:10px;
+}
+
+div.account_box > div > span {
+    background: gray;
+    color: white;
+    padding: 3px 5px;
+    border-radius: 5px;
+}
+
+div.account_box > button {
+    float: right;
+    margin-top: -20px;
+    width: 80px;
+    cursor: pointer;
+}
