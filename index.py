@@ -3,7 +3,7 @@ import account
 
 app = Flask(__name__, static_url_path="/static")
 app.register_blueprint(account.bp) # account.py에 작성된 route 들을 불러 들인다.
-
+#Entry point
 @app.get("/")
 def show_index_page():
     index_page_html_path = 'static/html/index.html'
